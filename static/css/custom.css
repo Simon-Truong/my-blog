@@ -1,3 +1,15 @@
 html {
     border-top: none;
 }
+
+body {
+    font-family: helvetica;
+}
+
+#header, #about > p {
+    margin: unset;
+}
+
+.content a.icon:hover {
+    color: unset;
+}
