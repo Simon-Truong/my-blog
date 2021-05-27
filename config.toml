@@ -13,24 +13,14 @@ theme = "cactus"
     postsOnHomePage = 5
     rss = true
 
-[[menu.main]]
-    name = "home"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "posts"
-    url = "/posts"
-    weight = 2
-
 [[params.social]]
     name = "github"
     link = "https://github.com/simon-truong"
 
 [[params.social]]
-    name = "email"
-    link = "simontruong2@gmail.com" # no need for "mailto:" at the start
-
-[[params.social]]
     name = "linkedin"
     link = "https://www.linkedin.com/in/simontruong2/"
+
+[[params.social]]
+    name = "email"
+    link = "simontruong2@gmail.com" # no need for "mailto:" at the start
