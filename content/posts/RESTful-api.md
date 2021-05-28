@@ -2,6 +2,7 @@
 title: "What is a RESTful Api"
 date: 2021-05-28T18:24:28+10:00
 draft: false
+categories: ["architecture"]
 ---
 
 To understand RESTful, we need to understand the basic concepts of an *API* (Application Programming Interface) and *HTTP* (Hypertext Transfer Protocol).

@@ -39,10 +39,9 @@
         </div>
         {{ $showReadTime := .Site.Params.showReadTime | default false }}
         {{if $showReadTime}}
-          {{ if gt .ReadingTime 0 }}
+          {{ if ge .ReadingTime 1 }}
             <div class="article-read-time">
-              {{ $readTime := math.Round (div (countwords .Content) 220.0) }}
-              {{ $readTime }} minute read
+              {{ .ReadingTime }} minute read
             </div>
           {{ end }}
         {{ end }}

@@ -19,6 +19,20 @@ body .h1 {
   color: unset;
 }
 
+.content a:hover {
+  color: blue;
+  background-image: none;
+}
+
+.content a {
+  background-image: none;
+  text-decoration: underline;
+  background-position: unset;
+  background-size: unset;
+  background-repeat: unset;
+}
+
+
 .post-list, #archive .social-media {
   margin: 0;
 }
