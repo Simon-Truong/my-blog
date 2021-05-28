@@ -1,49 +1,59 @@
 html {
-    border-top: none;
+  border-top: none;
 }
 
 body {
-    font-family: helvetica;
+  font-family: helvetica;
 }
 
 body .h1 {
-    display: unset;
+  display: unset;
 }
 
-#header, #about > p {
-    margin: unset;
+#header,
+#about > p {
+  margin: unset;
 }
 
 .content a.icon:hover {
-    color: unset;
+  color: unset;
 }
 
-.post-list {
-    margin: 0;
+.post-list, #archive .social-media {
+  margin: 0;
 }
 
 .post-list .post-item a {
-    color: #383838;
-    text-decoration: underline;
-    background-image: none;
-    background-position: unset;
-    background-size: unset;
-    background-repeat: unset;
+  color: #383838;
+  text-decoration: underline;
+  background-image: none;
+  background-position: unset;
+  background-size: unset;
+  background-repeat: unset;
 }
 
+FIX H2 POSTS LIST
+
 .post-list .post-item a:hover {
-    color: blue;
+  color: blue;
 }
 
 #writing {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #header #nav ul li {
-    color: #383838;
-    border-right: 1px solid;
+  color: #383838;
+  border-right: 1px solid;
 }
 
-.time-to-read {
-    margin-left: 0.5rem;
+.time-to-read,
+.article-read-time {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .article-category:before {
+    content: unset;
+  }
 }

@@ -1,0 +1,20 @@
+<div id="footer-post-container">
+  <div id="footer-post">
+    <div id="nav-footer" style="display: none">
+      <ul>
+        {{ range .Site.Menus.main }} 
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      {{ .TableOfContents }}
+    </div>
+
+    <div id="share-footer" style="display: none">
+      {{ .Scratch.Set "icon_class_name" "fa-lg" }}
+      {{ partial "share.html" . }}
+    </div>
+  </div>
+</div>
