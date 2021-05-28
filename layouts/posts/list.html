@@ -38,7 +38,10 @@
       <span>    
         <a class="" href="{{ .Permalink }}">{{ if .Title }} {{ .Title }} {{ else }} Untitled {{ end }}</a>
       </span>
-      <em class="time-to-read">{{ .ReadingTime }} minute read</em>
+      
+      {{ if gt .ReadingTime 0 }}
+        <em class="time-to-read">{{ .ReadingTime }} minute read</em>
+      {{ end }}
     </li>
     {{ end }}
   </ul>

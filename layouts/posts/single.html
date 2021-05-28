@@ -39,10 +39,12 @@
         </div>
         {{ $showReadTime := .Site.Params.showReadTime | default false }}
         {{if $showReadTime}}
-        <div class="article-read-time">
-          {{ $readTime := math.Round (div (countwords .Content) 220.0) }}
-          {{ $readTime }} minute read
-        </div>
+          {{ if gt .ReadingTime 0 }}
+            <div class="article-read-time">
+              {{ $readTime := math.Round (div (countwords .Content) 220.0) }}
+              {{ $readTime }} minute read
+            </div>
+          {{ end }}
         {{ end }}
         {{ if gt .Params.categories 0 }}
         <div class="article-category">
