@@ -18,7 +18,7 @@ HTTP is a protocol that the internet uses to enable communication between a *cli
 
 Here is an example of a HTTP request:
 
-``` shell
+```
 GET /api/coffee/random_coffee?size=10 HTTP/2
 Host: https://random-data-api.com
 cookie: session=440e6d7b-b295-43dd-93f8-8c58950c8e0c
@@ -28,13 +28,13 @@ Let's dive into the anatomy of a HTTP request.
 
 **HTTP version**
 
-`GET /api/coffee/random_coffee?size=10` **`HTTP/2`**
+`GET /api/coffee/random_coffee?size=10` ***`HTTP/2`***
 
 Specifies which version of HTTP to use. Currently, HTTP/2 is predominantly used throughout the internet.
 
 **HTTP method**
 
-**`GET`** `/api/coffee/random_coffee?size=10 HTTP/2`
+***`GET`*** `/api/coffee/random_coffee?size=10 HTTP/2`
 
 The HTTP method describes what the request is trying to do. In the example, the request is trying to *GET* data. Let's have a look at the HTTP methods we should be aware of (for simplicity, let's consider the context of database records):
 
@@ -45,11 +45,11 @@ The HTTP method describes what the request is trying to do. In the example, the 
 
 **Path**
 
-`GET` **`/api/coffee/random_coffee`**`?size=10` `HTTP/2`
+`GET` ***`/api/coffee/random_coffee`***`?size=10 HTTP/2`
 
 **Host**
 
-`Host:` **`https://random-data-api.com`**
+`Host:` ***`https://random-data-api.com`***
 
 Together, the path and host (base URL) determines the target server to send the HTTP request to. In this case, it will be:
 
@@ -59,15 +59,15 @@ You can get an idea of what the request is trying to achieve by the HTTP method 
 
 **Query Parameters**
 
-`GET /api/coffee/random_coffee`**`?size=10`** `HTTP/2`
+`GET /api/coffee/random_coffee`***`?size=10`*** `HTTP/2`
 
 Query parameters are key value pairs that provide additional information about the HTTP request. They are delineated by a "*?*", and as seen in this example, we have one query parameter which specifies a size of 10. We can add additional query parameters by appending a "*&*" and the key value pair. For example: 
 
-`?size=10`**`&`**`sort=asc`
+`?size=10`***`&`***`sort=asc`
 
 **Headers**
 
-**`cookie: session=440e6d7b-b295-43dd-93f8-8c58950c8e0c`**
+***`cookie: session=440e6d7b-b295-43dd-93f8-8c58950c8e0c`***
 
 Headers also provide additional information about the HTTP request. *Cookies* and *Bearer Tokens* are some common header options.
 
@@ -75,7 +75,7 @@ Headers also provide additional information about the HTTP request. *Cookies* an
 
 A HTTP body usually accompanies a POST or PUT HTTP request, as we need to provide information about the new or replacement record respectively. The type or format of the body is determined by the header `Content-Type`, a common format is *JSON* (Javascript Object Notation). Here is an example:
 
-```javascript 
+``` 
 {
     "name": "John Doe",
     "address": "101 Foo Bar"
