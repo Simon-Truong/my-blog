@@ -34,3 +34,16 @@ body .h1 {
 .post-list .post-item a:hover {
     color: blue;
 }
+
+#writing {
+    margin-top: 1rem;
+}
+
+#header #nav ul li {
+    color: #383838;
+    border-right: 1px solid;
+}
+
+.time-to-read {
+    margin-left: 0.5rem;
+}
