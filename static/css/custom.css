@@ -32,7 +32,9 @@ body .h1 {
   background-repeat: unset;
 }
 
-FIX H2 POSTS LIST
+.post-list h2 {
+  margin-top: 0;
+}
 
 .post-list .post-item a:hover {
   color: blue;
