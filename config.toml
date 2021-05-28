@@ -2,6 +2,7 @@ baseURL = "https://simon-truong.github.io/"
 languageCode = "en-au"
 title = "Simon's Blog"
 theme = "cactus"
+copyright = "Simon Truong"
 # googleAnalytics = "UA-123-45"
 
 [params]
@@ -24,3 +25,7 @@ theme = "cactus"
 [[params.social]]
     name = "email"
     link = "simontruong2@gmail.com" # no need for "mailto:" at the start
+
+[[params.social]]
+    name = "rss"
+    link = "/index.xml"
