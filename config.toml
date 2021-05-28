@@ -13,6 +13,8 @@ copyright = "Simon Truong"
     showAllPostsOnHomePage = false
     postsOnHomePage = 5
     rss = true
+    dateFormat = "2 January, 2006"
+    showReadTime = true
 
 [[params.social]]
     name = "github"
@@ -29,3 +31,13 @@ copyright = "Simon Truong"
 [[params.social]]
     name = "rss"
     link = "/index.xml"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
