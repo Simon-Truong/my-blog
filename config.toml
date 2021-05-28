@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://simon-truong.github.io/"
+languageCode = "en-au"
 title = "Simon's Blog"
 theme = "cactus"
 # googleAnalytics = "UA-123-45"
