@@ -66,10 +66,10 @@ body .h1 {
 .time-to-read,
 .article-read-time {
   margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 @media (min-width: 480px) {
-  .article-category:before {
-    content: unset;
-  }
+  .article-read-time:before, .article-tag:before, .article-category:before {
+    content: "| ";
 }
