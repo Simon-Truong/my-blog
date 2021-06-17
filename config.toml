@@ -3,7 +3,7 @@ languageCode = "en-au"
 title = "Simon's Blog"
 theme = "cactus"
 copyright = "Simon Truong"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "G-KSE6GMXXEZ"
 
 [params]
     description = "My learning journey"
