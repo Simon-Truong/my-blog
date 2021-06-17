@@ -3,6 +3,7 @@ title: "Understanding async & defer script tags"
 date: 2021-05-29T08:16:08+10:00
 draft: false
 categories: ["javascript"]
+comments: true
 ---
 
 There are two `script` tag attributes that we should be aware of: `async` & `defer`. Understanding the behavioural differences can make our code more performant.
