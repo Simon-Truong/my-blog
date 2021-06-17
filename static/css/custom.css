@@ -54,6 +54,17 @@ body .h1 {
   color: blue;
 }
 
+#header #nav ul a {
+  margin-right: 15px;
+  color: unset;
+  text-decoration: underline;
+}
+
+#header #nav ul a:hover {
+  color: blue;
+  background-image: unset;
+}
+
 #writing {
   margin-top: 1rem;
 }
@@ -72,4 +83,5 @@ body .h1 {
 @media (min-width: 480px) {
   .article-read-time:before, .article-tag:before, .article-category:before {
     content: "| ";
+  }
 }
