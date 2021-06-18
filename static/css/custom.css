@@ -6,8 +6,14 @@ body {
   font-family: helvetica;
 }
 
-body .h1 {
+body h1, body .h1 {
   display: unset;
+  color: #383838;
+  margin-bottom: 0;
+}
+
+body h3, body h4, body h5, body h6 {
+  margin-bottom: 0;
 }
 
 #header,
@@ -20,7 +26,7 @@ body .h1 {
 }
 
 .content a:hover {
-  color: blue;
+  color: #12712f;
   background-image: none;
 }
 
@@ -51,7 +57,7 @@ body .h1 {
 }
 
 .post-list .post-item a:hover {
-  color: blue;
+  color: #12712f;
 }
 
 #header #nav ul a {
@@ -61,7 +67,7 @@ body .h1 {
 }
 
 #header #nav ul a:hover {
-  color: blue;
+  color: #12712f;
   background-image: unset;
 }
 
@@ -83,5 +89,13 @@ body .h1 {
 @media (min-width: 480px) {
   .article-read-time:before, .article-tag:before, .article-category:before {
     content: "| ";
+  }
+  
+  .post-list .post-item {
+    margin-bottom: 0px;
+  }
+
+  #archive .post-list .post-item {
+    margin-bottom: 0px;
   }
 }
