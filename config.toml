@@ -6,7 +6,7 @@ copyright = "Simon Truong"
 googleAnalytics = "G-KSE6GMXXEZ"
 
 [params]
-    description = "My learning journey"
+    #description = "My learning journey"
     mainSection = "posts"
     colortheme = "white" # dark, light, white, or classic
     css = ["css/custom.css"]
