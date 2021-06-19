@@ -5,8 +5,6 @@ draft: false
 categories: ["javascript", "React", "Angular", "Vue.js"]
 ---
 
-When a user visits a web application or website, a view is generated and presented to them. Have you ever wondered *who* is rendering that view?
-
 CSR (Client Side Rendering), SSR (Server Sided Rendering) and SSG (Static Site Generators) are rendering methods that a developer should be aware of. Today, we will go through the differences, advantages and disadvantages of these rendering approaches.
 
 # Client Side Rendering
