@@ -2,15 +2,15 @@
 title: "What is a RESTful Api"
 date: 2021-05-28T18:24:28+10:00
 draft: false
-categories: ["architecture"]
+categories: ["architecture", "HTTP"]
 ---
 
 To understand RESTful, we need to understand the basic concepts of an *API* (Application Programming Interface) and *HTTP* (Hypertext Transfer Protocol).
 
-#### API
+# API
 An API is essentially the middle man between a client and the data they wish to acquire. The API is able to interpret the client's request and handles all the necessary actions such as computation or querying a database, and produces a response that the client consumes.
 
-#### HTTP
+# HTTP
 HTTP is a protocol that the internet uses to enable communication between a *client* and a *server*. Here is an example of a typical workflow:
 
 1. The browser (client) generates a HTTP *request* and sends it to a server
@@ -27,14 +27,12 @@ cookie: session=440e6d7b-b295-43dd-93f8-8c58950c8e0c
 
 Let's dive into the anatomy of a HTTP request.
 
-**HTTP version**
-
+#### HTTP version
 `GET /api/coffee/random_coffee?size=10` ***`HTTP/2`***
 
 Specifies which version of HTTP to use. Currently, HTTP/2 is predominantly used throughout the internet.
 
-**HTTP method**
-
+#### HTTP method
 ***`GET`*** `/api/coffee/random_coffee?size=10 HTTP/2`
 
 The HTTP method describes what the request is trying to do. In the example, the request is trying to *GET* data. Let's have a look at the HTTP methods we should be aware of (for simplicity, let's consider the context of database records):
@@ -44,12 +42,10 @@ The HTTP method describes what the request is trying to do. In the example, the 
 - `PATCH` & `PUT`: a request that is attempting to update a record. Although similar, a PUT request's body contains the entire record to update so it behaves like a replacement. A PATCH request however, will only contain partial data to update
 - `DELETE`: a request that is attempting to delete a record
 
-**Path**
-
+#### Path
 `GET` ***`/api/coffee/random_coffee`***`?size=10 HTTP/2`
 
-**Host**
-
+#### Host
 `Host:` ***`https://random-data-api.com`***
 
 Together, the path and host (base URL) determines the target server to send the HTTP request to. In this case, it will be:
@@ -58,22 +54,19 @@ Together, the path and host (base URL) determines the target server to send the 
 
 You can get an idea of what the request is trying to achieve by the HTTP method and path. In this example, you can interpret the HTTP request as "GET random coffee".
 
-**Query Parameters**
-
+#### Query Parameters
 `GET /api/coffee/random_coffee`***`?size=10`*** `HTTP/2`
 
 Query parameters are key value pairs that provide additional information about the HTTP request. They are delineated by a "*?*", and as seen in this example, we have one query parameter which specifies a size of 10. We can add additional query parameters by appending a "*&*" and the key value pair. For example: 
 
 `?size=10`***`&`***`sort=asc`
 
-**Headers**
-
+#### Headers
 ***`cookie: session=440e6d7b-b295-43dd-93f8-8c58950c8e0c`***
 
 Headers also provide additional information about the HTTP request. *Cookies* and *Bearer Tokens* are some common header options.
 
-**Body**
-
+#### Body
 A HTTP body usually accompanies a POST or PUT HTTP request, as we need to provide information about the new or replacement record respectively. The type or format of the body is determined by the header `Content-Type`, a common format is *JSON* (Javascript Object Notation). Here is an example:
 
 ``` 
@@ -83,7 +76,7 @@ A HTTP body usually accompanies a POST or PUT HTTP request, as we need to provid
 }
 ```
 
-#### RESTful API
+# RESTful API
 RESTful (REpresentational State Transfer) is an architectural design for an API that commonly communicates with the client through HTTP. For an API to be considered RESTful, it must adhere to the following properties:
 
 - `Statelessness`: Each HTTP request is independent from one another, they must not rely on information from prior or subsequent HTTP requests. Individual HTTP request should contain sufficient information to fulfill their purpose and by doing so, minimizes the need for the server to persist sessional data. Ultimately, this designs the API to be more performant and scalable
