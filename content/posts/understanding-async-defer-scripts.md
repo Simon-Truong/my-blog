@@ -17,4 +17,4 @@ The `defer` attribute specifies that the script will be fetched asynchronously a
 
 `<script src="index.js" defer></script>`
 
-To help understand, [this](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html) is a source that contains diagrams that clearly illustrate the behavioural differences.
+To help understand, [this](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html) contains diagrams that clearly illustrate the behavioural differences.
